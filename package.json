@@ -1,0 +1,14 @@
+{
+  "name": "algorithms-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "./node_modules/.bin/standard --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "standard": "^8.6.0"
+  }
+}

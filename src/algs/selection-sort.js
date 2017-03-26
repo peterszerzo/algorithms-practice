@@ -12,6 +12,4 @@ function selectionSort (arr) {
   }
 }
 
-module.exports = {
-  sync: selectionSort
-}
+module.exports = selectionSort

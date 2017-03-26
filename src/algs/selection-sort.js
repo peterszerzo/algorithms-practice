@@ -1,4 +1,8 @@
-const swap = require('../utils/swap')
+function swap (arr, i, j) {
+  const swap = arr[i]
+  arr[i] = arr[j]
+  arr[j] = swap
+}
 
 function selectionSort (arr) {
   for (let i = 0; i < arr.length - 1; i++) {

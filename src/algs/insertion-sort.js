@@ -1,4 +1,8 @@
-const swap = require('../utils/swap')
+function swap (arr, i, j) {
+  const swap = arr[i]
+  arr[i] = arr[j]
+  arr[j] = swap
+}
 
 function insertionSort (arr) {
   for (let i = 1; i < arr.length; i++) {

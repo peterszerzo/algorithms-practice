@@ -16,6 +16,4 @@ function shellSort (arr) {
   }
 }
 
-module.exports = {
-  sync: shellSort
-}
+module.exports = shellSort

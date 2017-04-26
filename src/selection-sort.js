@@ -14,6 +14,7 @@ function selectionSort (arr) {
     }
     swap(arr, i, minIndex)
   }
+  return arr
 }
 
 module.exports = selectionSort

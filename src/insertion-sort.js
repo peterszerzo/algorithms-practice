@@ -11,6 +11,7 @@ function insertionSort (arr) {
       swap(arr, j, j - 1)
     }
   }
+  return arr
 }
 
 module.exports = insertionSort

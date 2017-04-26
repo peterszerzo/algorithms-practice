@@ -18,6 +18,7 @@ function shellSort (arr) {
     }
     h = Math.floor(h / 3)
   }
+  return arr
 }
 
 module.exports = shellSort

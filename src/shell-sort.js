@@ -21,4 +21,5 @@ function shellSort (arr) {
   return arr
 }
 
-module.exports = shellSort
+// Test client
+console.log(shellSort([-3, 1, 0]))

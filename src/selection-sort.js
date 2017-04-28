@@ -17,4 +17,5 @@ function selectionSort (arr) {
   return arr
 }
 
-module.exports = selectionSort
+// Test client
+console.log(selectionSort([-3, 1, 0]))

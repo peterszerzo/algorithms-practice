@@ -6,7 +6,7 @@ const POSITIVE_INFINITY = 10000
  * @param {Array} graph - List of edges with to, from and cost fields
  * @param {Array} memo - Intermediate path cost array, not supplied by the test client.
  */
-function bellmanFord(vertices, graph, memoInput) {
+function bellmanFord (vertices, graph, memoInput) {
   const memo = memoInput || vertices.reduce((acc, current) => Object.assign({}, acc, {
     [current]: current === vertices[0] ? 0 : POSITIVE_INFINITY
   }), {})

@@ -6,14 +6,14 @@ const POSITIVE_INFINITY = 10000
  * @param {Array} graph - List of edges with to, from and cost fields
  * @param {Array} memo - Intermediate path cost array, not supplied by the test client.
  */
-function dijkstra(vertices, graph) {
+function dijkstra (vertices, graph) {
   const memo = vertices.reduce((acc, current) => Object.assign({}, acc, {
     [current]: {
       cost: current === vertices[0] ? 0 : POSITIVE_INFINITY,
       isVisited: false
     }
   }), {})
-  function getNewVisitedVertex() {
+  function getNewVisitedVertex () {
     return Object.keys(memo).filter(key => !memo[key].isVisited).sort((a, b) => {
       memo[a].cost - memo[b].cost
     })[0]

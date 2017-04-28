@@ -14,4 +14,5 @@ function insertionSort (arr) {
   return arr
 }
 
-module.exports = insertionSort
+// Test client
+console.log(insertionSort([-3, 1, 0]))

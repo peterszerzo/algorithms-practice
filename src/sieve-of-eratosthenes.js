@@ -1,4 +1,4 @@
-function conventional(n) {
+function conventional (n) {
   const primes = []
   const arr = []
   for (let i = 0; i < n; i += 1) {
@@ -20,7 +20,7 @@ function conventional(n) {
   return primes
 }
 
-function recurseInto(list, fn) {
+function recurseInto (list, fn) {
   const head = list.length > 0 ? list[0] : null
   const tail = list.length > 0 ? list.slice(1, list.length) : null
   if (head) {
@@ -31,7 +31,7 @@ function recurseInto(list, fn) {
   }
 }
 
-function recursive(n) {
+function recursive (n) {
   const list = []
   for (let i = 2; i <= n; i += 1) {
     list[i] = {
@@ -41,7 +41,7 @@ function recursive(n) {
   }
   const limit = Math.sqrt(n)
   for (let i = 2; i <= limit; i += 1) {
-    recurseInto(list, (val) => {
+    recurseInto(list, val => {
       if (val.index > i && val.value) {
         if (val.index % i === 0) {
           val.value = false
@@ -52,4 +52,6 @@ function recursive(n) {
   return list.filter(({value}) => value).map(({index}) => index)
 }
 
+// Test client
+console.log(conventional(100))
 console.log(recursive(100))

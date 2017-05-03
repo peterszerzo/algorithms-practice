@@ -44,7 +44,7 @@ function maximumCrossingSubarray (a, low, mid, high) {
   }
 }
 
-function maximumSubarray(a, low = 0, high = a.length - 1) {
+function maximumSubarray (a, low = 0, high = a.length - 1) {
   if (low === high) {
     return {
       low: low,

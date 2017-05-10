@@ -27,7 +27,7 @@ function maximumCrossingSubarray (a, low, mid, high) {
   var rightIndex = mid + 1
   var rightMaxIndex
   var rightSum = -10000
-  var sum = 0
+  sum = 0
   while (rightIndex <= high) {
     sum = sum + a[rightIndex]
     if (sum > rightSum) {

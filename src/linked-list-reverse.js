@@ -9,7 +9,7 @@ function node (val, next) {
 // Display as string
 function toString (list) {
   if (!list.next) {
-    return(list.val)
+    return (list.val)
   }
   return (list.val + ' -> ' + toString(list.next))
 }
